@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>color_flood: Référence du fichier grill.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">color_flood
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier grill.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>contient les fonctions qui créent, remplissent et gèrent une grille de couleurs  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="grill_8h_source.html">grill.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a727bbe93caacb6d68f58f483a2943bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcolorgrill.html">colorgrill</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a727bbe93caacb6d68f58f483a2943bff">creat</a> (int n)</td></tr>
+<tr class="memdesc:a727bbe93caacb6d68f58f483a2943bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">crée une grille vide de taille n  <a href="#a727bbe93caacb6d68f58f483a2943bff">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a727bbe93caacb6d68f58f483a2943bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc31b1013f233043f8c508bcb82ecea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a3dc31b1013f233043f8c508bcb82ecea">gfree</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g)</td></tr>
+<tr class="memdesc:a3dc31b1013f233043f8c508bcb82ecea"><td class="mdescLeft">&#160;</td><td class="mdescRight">vide la place mémoire allouée à une grille  <a href="#a3dc31b1013f233043f8c508bcb82ecea">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3dc31b1013f233043f8c508bcb82ecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b598be86eb06df60832fda419cffd14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a6b598be86eb06df60832fda419cffd14">init</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g)</td></tr>
+<tr class="memdesc:a6b598be86eb06df60832fda419cffd14"><td class="mdescLeft">&#160;</td><td class="mdescRight">remplit une grille donnée avec des coulaurs choisies aléatoirement  <a href="#a6b598be86eb06df60832fda419cffd14">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6b598be86eb06df60832fda419cffd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c3a52111ef0cadc39f3187937dc105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a78c3a52111ef0cadc39f3187937dc105">change_size</a> (int n, <a class="el" href="structcolorgrill.html">colorgrill</a> *g)</td></tr>
+<tr class="memdesc:a78c3a52111ef0cadc39f3187937dc105"><td class="mdescLeft">&#160;</td><td class="mdescRight">change la taille d'une grille de couleurs  <a href="#a78c3a52111ef0cadc39f3187937dc105">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a78c3a52111ef0cadc39f3187937dc105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c54712d90fc16165d851f3558c4abb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a9c54712d90fc16165d851f3558c4abb9">print_grill</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g)</td></tr>
+<tr class="memdesc:a9c54712d90fc16165d851f3558c4abb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">affichage en terminal d'une grille  <a href="#a9c54712d90fc16165d851f3558c4abb9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9c54712d90fc16165d851f3558c4abb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e62156c04d58ab3fec148ad96577ef"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#ab1e62156c04d58ab3fec148ad96577ef">get_color</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g, int x, int y)</td></tr>
+<tr class="memdesc:ab1e62156c04d58ab3fec148ad96577ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">donne la valeur de la case dans g de coordonnées x et y  <a href="#ab1e62156c04d58ab3fec148ad96577ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab1e62156c04d58ab3fec148ad96577ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1667f6639ad3d4a7793228959bb7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#ae1667f6639ad3d4a7793228959bb7f30">change_color</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g, char color, int x, int y)</td></tr>
+<tr class="memdesc:ae1667f6639ad3d4a7793228959bb7f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">la case de coordonnées x et y dans g prend la valeur passée en argument  <a href="#ae1667f6639ad3d4a7793228959bb7f30">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae1667f6639ad3d4a7793228959bb7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475e3b05b2f8c9f6ad7c72cc22d87132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#a475e3b05b2f8c9f6ad7c72cc22d87132">change</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g, char color, int x, int y)</td></tr>
+<tr class="memdesc:a475e3b05b2f8c9f6ad7c72cc22d87132"><td class="mdescLeft">&#160;</td><td class="mdescRight">effectue le changement de couleur de la tâche 4-connexe située en haut à gauche de la grille ers la couleur de la grille se trouvant aux coordonnées x et y  <a href="#a475e3b05b2f8c9f6ad7c72cc22d87132">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a475e3b05b2f8c9f6ad7c72cc22d87132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7829b04088fb6038307cc2ac26651f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grill_8c.html#ae7829b04088fb6038307cc2ac26651f7">status</a> (<a class="el" href="structcolorgrill.html">colorgrill</a> *g)</td></tr>
+<tr class="memdesc:ae7829b04088fb6038307cc2ac26651f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">vérifie si la victoire est acquise  <a href="#ae7829b04088fb6038307cc2ac26651f7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae7829b04088fb6038307cc2ac26651f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>contient les fonctions qui créent, remplissent et gèrent une grille de couleurs </p>
+<dl class="section author"><dt>Auteur</dt><dd>SVPlease </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>24 avril 2017 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a475e3b05b2f8c9f6ad7c72cc22d87132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475e3b05b2f8c9f6ad7c72cc22d87132">&#9670;&nbsp;</a></span>change()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void change </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>effectue le changement de couleur de la tâche 4-connexe située en haut à gauche de la grille ers la couleur de la grille se trouvant aux coordonnées x et y </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+    <tr><td class="paramname">x</td><td>un entier </td></tr>
+    <tr><td class="paramname">y</td><td>un entier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1667f6639ad3d4a7793228959bb7f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1667f6639ad3d4a7793228959bb7f30">&#9670;&nbsp;</a></span>change_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void change_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>la case de coordonnées x et y dans g prend la valeur passée en argument </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+    <tr><td class="paramname">x</td><td>un entier </td></tr>
+    <tr><td class="paramname">y</td><td>un entier </td></tr>
+    <tr><td class="paramname">color</td><td>un caratère </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78c3a52111ef0cadc39f3187937dc105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c3a52111ef0cadc39f3187937dc105">&#9670;&nbsp;</a></span>change_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void change_size </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>change la taille d'une grille de couleurs </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>un entier nouvelle taille de la grille </td></tr>
+    <tr><td class="paramname">g</td><td>un pointeur vers la grille à modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a727bbe93caacb6d68f58f483a2943bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727bbe93caacb6d68f58f483a2943bff">&#9670;&nbsp;</a></span>creat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcolorgrill.html">colorgrill</a> creat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>crée une grille vide de taille n </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>un entier taille de la grille </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>g la grille initialisée </dd></dl>
+
+</div>
+</div>
+<a id="ab1e62156c04d58ab3fec148ad96577ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e62156c04d58ab3fec148ad96577ef">&#9670;&nbsp;</a></span>get_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char get_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>donne la valeur de la case dans g de coordonnées x et y </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+    <tr><td class="paramname">x</td><td>un entier </td></tr>
+    <tr><td class="paramname">y</td><td>un entier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char la valeur de la case de coordonnees x et y </dd></dl>
+
+</div>
+</div>
+<a id="a3dc31b1013f233043f8c508bcb82ecea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc31b1013f233043f8c508bcb82ecea">&#9670;&nbsp;</a></span>gfree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gfree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vide la place mémoire allouée à une grille </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b598be86eb06df60832fda419cffd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b598be86eb06df60832fda419cffd14">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remplit une grille donnée avec des coulaurs choisies aléatoirement </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c54712d90fc16165d851f3558c4abb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c54712d90fc16165d851f3558c4abb9">&#9670;&nbsp;</a></span>print_grill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_grill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>affichage en terminal d'une grille </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7829b04088fb6038307cc2ac26651f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7829b04088fb6038307cc2ac26651f7">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcolorgrill.html">colorgrill</a> *&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vérifie si la victoire est acquise </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>un pointeur vers une grille </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

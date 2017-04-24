@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>color_flood:  Fichier source de grill.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">color_flood
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">grill.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="grill_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _GRILL_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _GRILL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structcolorgrill.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcolorgrill.html">colorgrill</a> {</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structcolorgrill.html#a439227feff9d7f55384e8780cfc2eb82">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcolorgrill.html#a439227feff9d7f55384e8780cfc2eb82">size</a>;               </div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structcolorgrill.html#adca9db586bddf2cd2a69b0d6e6e3acca">   12</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structcolorgrill.html#adca9db586bddf2cd2a69b0d6e6e3acca">now_color</a>;         </div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structcolorgrill.html#a8ad5b2cda53e426f822dc83eec703036">   13</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="structcolorgrill.html#a8ad5b2cda53e426f822dc83eec703036">grill</a>;           </div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="grill_8h.html#a7f7bfcfd8144517d63335d5bdae78893">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcolorgrill.html">colorgrill</a> <a class="code" href="structcolorgrill.html">colorgrill</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="structcolorgrill.html">colorgrill</a> <a class="code" href="grill_8h.html#a727bbe93caacb6d68f58f483a2943bff">creat</a>(<span class="keywordtype">int</span> n);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#a3dc31b1013f233043f8c508bcb82ecea">gfree</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#a6b598be86eb06df60832fda419cffd14">init</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#a9c54712d90fc16165d851f3558c4abb9">print_grill</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">char</span> <a class="code" href="grill_8h.html#ab1e62156c04d58ab3fec148ad96577ef">get_color</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g,<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#ae1667f6639ad3d4a7793228959bb7f30">change_color</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g,<span class="keywordtype">char</span> color,<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#a475e3b05b2f8c9f6ad7c72cc22d87132">change</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g, <span class="keywordtype">char</span> color,<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="grill_8h.html#ae7829b04088fb6038307cc2ac26651f7">status</a>(<a class="code" href="structcolorgrill.html">colorgrill</a> *g);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="grill_8h_html_ae1667f6639ad3d4a7793228959bb7f30"><div class="ttname"><a href="grill_8h.html#ae1667f6639ad3d4a7793228959bb7f30">change_color</a></div><div class="ttdeci">void change_color(colorgrill *g, char color, int x, int y)</div><div class="ttdoc">la case de coordonnées x et y dans g prend la valeur passée en argument </div><div class="ttdef"><b>Definition:</b> grill.c:145</div></div>
+<div class="ttc" id="structcolorgrill_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="structcolorgrill.html#a439227feff9d7f55384e8780cfc2eb82">colorgrill::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> grill.h:11</div></div>
+<div class="ttc" id="structcolorgrill_html_a8ad5b2cda53e426f822dc83eec703036"><div class="ttname"><a href="structcolorgrill.html#a8ad5b2cda53e426f822dc83eec703036">colorgrill::grill</a></div><div class="ttdeci">char ** grill</div><div class="ttdef"><b>Definition:</b> grill.h:13</div></div>
+<div class="ttc" id="grill_8h_html_a3dc31b1013f233043f8c508bcb82ecea"><div class="ttname"><a href="grill_8h.html#a3dc31b1013f233043f8c508bcb82ecea">gfree</a></div><div class="ttdeci">void gfree(colorgrill *g)</div><div class="ttdoc">vide la place mémoire allouée à une grille </div><div class="ttdef"><b>Definition:</b> grill.c:49</div></div>
+<div class="ttc" id="grill_8h_html_ae7829b04088fb6038307cc2ac26651f7"><div class="ttname"><a href="grill_8h.html#ae7829b04088fb6038307cc2ac26651f7">status</a></div><div class="ttdeci">void status(colorgrill *g)</div><div class="ttdoc">vérifie si la victoire est acquise </div><div class="ttdef"><b>Definition:</b> grill.c:188</div></div>
+<div class="ttc" id="structcolorgrill_html"><div class="ttname"><a href="structcolorgrill.html">colorgrill</a></div><div class="ttdoc">structure d&amp;#39;une grille de couleurs </div><div class="ttdef"><b>Definition:</b> grill.h:10</div></div>
+<div class="ttc" id="grill_8h_html_a475e3b05b2f8c9f6ad7c72cc22d87132"><div class="ttname"><a href="grill_8h.html#a475e3b05b2f8c9f6ad7c72cc22d87132">change</a></div><div class="ttdeci">void change(colorgrill *g, char color, int x, int y)</div><div class="ttdoc">effectue le changement de couleur de la tâche 4-connexe située en haut à gauche de la grille ers la c...</div><div class="ttdef"><b>Definition:</b> grill.c:161</div></div>
+<div class="ttc" id="grill_8h_html_a727bbe93caacb6d68f58f483a2943bff"><div class="ttname"><a href="grill_8h.html#a727bbe93caacb6d68f58f483a2943bff">creat</a></div><div class="ttdeci">colorgrill creat(int n)</div><div class="ttdoc">crée une grille vide de taille n </div><div class="ttdef"><b>Definition:</b> grill.c:31</div></div>
+<div class="ttc" id="grill_8h_html_ab1e62156c04d58ab3fec148ad96577ef"><div class="ttname"><a href="grill_8h.html#ab1e62156c04d58ab3fec148ad96577ef">get_color</a></div><div class="ttdeci">char get_color(colorgrill *g, int x, int y)</div><div class="ttdoc">donne la valeur de la case dans g de coordonnées x et y </div><div class="ttdef"><b>Definition:</b> grill.c:127</div></div>
+<div class="ttc" id="structcolorgrill_html_adca9db586bddf2cd2a69b0d6e6e3acca"><div class="ttname"><a href="structcolorgrill.html#adca9db586bddf2cd2a69b0d6e6e3acca">colorgrill::now_color</a></div><div class="ttdeci">char now_color</div><div class="ttdef"><b>Definition:</b> grill.h:12</div></div>
+<div class="ttc" id="grill_8h_html_a9c54712d90fc16165d851f3558c4abb9"><div class="ttname"><a href="grill_8h.html#a9c54712d90fc16165d851f3558c4abb9">print_grill</a></div><div class="ttdeci">void print_grill(colorgrill *g)</div><div class="ttdoc">affichage en terminal d&amp;#39;une grille </div><div class="ttdef"><b>Definition:</b> grill.c:104</div></div>
+<div class="ttc" id="grill_8h_html_a6b598be86eb06df60832fda419cffd14"><div class="ttname"><a href="grill_8h.html#a6b598be86eb06df60832fda419cffd14">init</a></div><div class="ttdeci">void init(colorgrill *g)</div><div class="ttdoc">remplit une grille donnée avec des coulaurs choisies aléatoirement </div><div class="ttdef"><b>Definition:</b> grill.c:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
